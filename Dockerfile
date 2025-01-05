@@ -2,6 +2,8 @@ FROM python:3.9-slim as Builder
 
 WORKDIR /app
 
+COPY ./app
+
 COPY requirements.txt .
 
 RUN pip install --user -r requirements.txt 
