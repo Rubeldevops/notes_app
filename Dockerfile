@@ -2,7 +2,7 @@ FROM python:3.9-slim as Builder
 
 WORKDIR /app
 
-COPY ./app
+COPY . /app
 
 COPY requirements.txt .
 
